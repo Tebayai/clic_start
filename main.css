@@ -265,18 +265,17 @@ html{
 .btn:hover {
   background-color: #0056b3;
 }
-figure{
+/*reduire la taille des images et les laisser cote a cote*/
+.image-container {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 100%;
 }
-/* faire en sorte que les images sois a coté entre elles et que les images sois plus grande */
-figure img{
-  width: 600px;
-  height: 500px;
-
+.image-container img {
+  max-width: 45%;
+  height: auto;
 }
 
 
