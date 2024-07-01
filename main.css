@@ -214,10 +214,10 @@ html{
 }
 
 /*****************/
-/*    Photos     */
+/* Conférences   */
 /*****************/
 
-.galerie{
+.conf{
   min-height: 75vh;
   background: white;
 }
@@ -225,10 +225,7 @@ html{
   width: 100%;
 }
 
-
-
-
-.galerie h2 {
+.conf h2 {
   position: relative;
   top: 10px;
   font-size: 3rem;
@@ -237,7 +234,7 @@ html{
   font-family: chapaza;
 }
 
-/* Work */
+/* php */
 .event-list {
   max-width: 800px;
   margin: 0 auto;
@@ -312,13 +309,6 @@ figure img{
   margin-top: 30px;
   grid-template-columns: 60px 60px;
 }
-
-/**.containerC .containerInfo{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  right: 300px;
-}*/
 
 .containerC .containerInfo .box{
   position: relative;
@@ -422,13 +412,6 @@ footer{
     left: 70px;
   }
 
- /* .containerC .containerInfo {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    right: 200px;
-
-} */
 }
 
 /* Tablettes */

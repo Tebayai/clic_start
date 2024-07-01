@@ -74,8 +74,8 @@
 
 
       <!-- photos section start -->
-      <section class="galerie" id="galerie">
-          <div class="titre_photo">
+      <section class="conf" id="conf">
+          <div class="titre_conf">
               <h2>Conférences</h2>
               <div class="barre"></div>
           </div>
@@ -84,7 +84,7 @@
             <a href="https://www.billetweb.fr/shop.php?event=senrichir-et-entreprendre&multi=35845&color=023e8f&color=023e8f&from_multi=1"> acheter reservation</a>
           </div>
           
-          <!--
+          
           <div class="event-list">
             <?php
               //exemple de tableau d'evenements
@@ -132,12 +132,13 @@
                 echo "</div>";
               }
             ?>
-              -->
+            
             
             <figure>
               <img src="img/6-4-1024x630.jpg" alt="conférence">
               <figcaption>Senrichir et entreprendre</figcaption>
             </figure>
+
 
           </div>
 
@@ -167,12 +168,16 @@
                     <p class="email">contact@clicstart.fr</p>
                 </div>  
             </div>
-        </div>
+            <div>
+              <p>Important : laissez nous un message </p>
+            </div>
+
+          </div>
       </section>
 
   <!-- footer section start -->
   <footer>
-    <span>Created By YG</a> | 2022 All rights reserved.</span>
+    <span>Created By YG</a> | SAS CLICSTART Filiale Stratégie Conseil Group et SAS Firstset | 2024 All rights reserved.</span>
   </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
