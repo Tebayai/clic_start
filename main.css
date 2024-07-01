@@ -221,9 +221,6 @@ html{
   min-height: 75vh;
   background: white;
 }
-.wrapper{
-  width: 100%;
-}
 
 .conf h2 {
   position: relative;
@@ -241,16 +238,18 @@ html{
   padding: 20px;
 }
 .event {
-  border: 1px solid #ccc;
+  border: 3px solid #0149a7;
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 5px;
 }
-.event h2 {
+.event h3 {
   margin: 0 0 10px 0;
+  color: var(--color4);
 }
 .event p {
   margin: 5px 0;
+  color: var(--color5);
 }
 .btn {
   display: inline-block;
@@ -259,17 +258,24 @@ html{
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  /*faire en sorte que le boutton sois en bas a droite de event list*/
+  position: relative;
+  left: 580px;
 }
 .btn:hover {
   background-color: #0056b3;
 }
-
-figure img{
-  width: 70%;
-  height: 70%;
+figure{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* faire en sorte que les images sois a coté entre elles et que les images sois plus grande */
+figure img{
+  width: 600px;
+  height: 500px;
 
 }
 
