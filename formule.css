@@ -1,0 +1,287 @@
+:root{
+  --color1: #fff;
+  --color3: #0f4a97;
+  --color4: #0149a7;
+  --color5: #649be4;
+  --color6: #022b61;
+  --color7: rgba(35, 89, 190, 0.76);
+  --border:.2rem solid var(--color3);
+  --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: chapaza;
+  src: url(font/Chapaza\ Italic.ttf);
+}
+
+@font-face{
+  font-family: aramisi;
+  src: url(font/aramisi.ttf); 
+}
+
+/****************/
+/*   menu       */
+/****************/
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--color5);
+}
+
+body{
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header{
+  position: relative;
+  z-index: 1000;
+}
+
+.container{
+  border-radius: .5rem;
+  overflow: hidden;
+  background: var(--color7);
+  backdrop-filter: blur(.5rem);
+  max-width: 1200px;
+  margin: 10rem auto;
+  box-shadow: var(--box-shadow);
+}
+
+section{
+  padding: 2rem;
+}
+
+.header{
+  position: relative;
+  z-index: 100;
+  background: var(--color7);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo{
+  font-size: 2.5rem;
+  font-family: chapaza;
+  color: var(--color3);
+  width: 100px;
+  height: 100px;
+}
+
+.header .navbar a{
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: white;
+}
+
+.header .navbar a:hover{
+  color: var(--color5);
+}
+
+#menu-btn{
+  font-size: 2.5rem;
+  color: var(--color3);
+  cursor: pointer;
+  display: none;
+}
+
+
+/***************/
+/*   tarif     */
+/***************/
+.heading{
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: var(--color6);
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  font-family: chapaza;
+  margin-top: 2rem;
+}
+
+.btn{
+  display: inline-block;
+  padding: 1rem 3rem;
+  border: .2rem solid var(--color4);
+  background: var(--color5);
+  color: var(--color6);
+  border-radius: .5rem;
+  font-size: 1.7rem;
+  word-break: break-word;
+}
+
+.btn:hover{
+  background: var(--color5);
+  color: var(--color1);
+}
+
+.formule .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 1.5rem;
+}
+
+.formule .box-container .box{
+  text-align: center;
+  border-radius:.5rem;
+  background: var(--color7);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+}
+
+.formule .box-container .box h3{
+  font-size: 2.5rem;
+  font-family: chapaza;
+  text-transform: uppercase;
+  color: var(--color6);
+}
+
+.formule .box-container .box .prix{
+  padding: 1rem;
+  border-radius: .5rem;
+  background: var(--color5);
+  color: var(--color6);
+  font-size: 3rem;
+  margin: 1rem;
+  border: .2rem solid var(--color4);
+}
+
+.formule .box-container .box .list1 p{
+  font-size: 1.5rem;
+  color: var(--color6);
+  padding: 1rem 0;
+}
+
+.formule .box-container .box .list2 p{
+  font-size: 1.5rem;
+  color: var(--color6);
+  padding: 1rem 0;
+}
+
+.formule .box-container .box .list3 p{
+  font-size: 1.5rem;
+  color: var(--color6);
+  padding: 1rem 0;
+}
+
+.box .list1{
+  height: 398px;
+}
+
+.box .list2{
+  height: 308px;
+}
+
+
+
+
+/*************/
+/*   Media   */
+/*************/
+
+@media (max-width:1200px){
+  .container{
+    margin: 5rem 10rem;
+  }
+}
+
+@media (max-width:991px){
+
+  /*faire apparaitre l'iamge de fond centrer et qu'une seule fois*/
+  body{
+    background:url(img/b5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  html{
+    font-size: 55%;
+  }
+  .container{
+    margin: 5rem 10rem;
+
+  }
+  /*retirer l'effet de list2 */
+  .box .list2{
+    height: 400px;
+  }
+  .box .list1{
+    height: 400px;
+  }
+  .formule .box-container .box .btn {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width:768px){
+  #menu-btn{
+    display: inline-block;
+    transition: .2s linear;
+  }
+
+  #menu-btn.fa-times{
+    transform: rotate(180deg);
+  }
+
+  .header .navbar{
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: var(--color7);
+    border-top: var(--border);
+    padding: 2rem;
+    clip-path: polygon(0 0 , 100% 0 , 100% 0 , 0 0);
+    transition: .2s linear;
+  }
+  .header .navbar a{
+    display: block;
+    margin: 2rem;
+    text-align: center;
+  }
+
+  .header .navbar.active{
+    clip-path: polygon(0 0 , 100% 0 , 100% 100% , 0 100%);
+  }
+
+  .heading{
+    font-size: 4rem;
+  }
+
+
+}
+
+@media (max-width:450px){
+
+  .container{
+    margin: 2rem;
+  }
+
+}
+

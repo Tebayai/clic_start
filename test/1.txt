@@ -1,0 +1,32 @@
+        <!-- about section start -->
+        <section class="about" data-aos="fade-up" id="about">
+          <div class="container">
+              <div class="entete">
+                  <div class="entete__slogan">
+                      creativity
+                  </div>
+                  <div class="entete__titre">
+                      <h2>what i do.</h2>
+                      <div class="barre"></div>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius amet deserunt quis non at deleniti fugiat minus cum animi. Eaque non beatae blanditiis distinctio perspiciatis unde laudantium iusto, quaerat quas!</p>
+                  </div>
+              </div>
+              <div class="about__corps">
+                  <div class="about__corps__block">
+                      <img src="img/IMG-8460.jpg" alt="branding" />
+                      <h3>Wedding</h3>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore minima possimus sed corporis alias distinctio dignissimos.</p>
+                  </div>
+                  <div class="about__corps__block">
+                      <img src="img/IMG-9596.jpg" alt="websites" />
+                      <h3>Planer</h3>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore minima possimus sed corporis alias distinctio dignissimos.</p>
+                  </div>
+                  <div class="about__corps__block">
+                      <img src="img/IMG-9563.jpg" alt="strategy" />
+                      <h3>Designer</h3>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore minima possimus sed corporis alias distinctio dignissimos.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
