@@ -54,21 +54,19 @@ body{
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  color: #002366;
 }
 
-.header{
-  position: relative;
-  z-index: 1000;
-}
 
 .container{
   border-radius: .5rem;
   overflow: hidden;
-  background: var(--color7);
+  background: white;
   backdrop-filter: blur(.5rem);
   max-width: 1200px;
   margin: 10rem auto;
   box-shadow: var(--box-shadow);
+  border: 3px solid #002366;
 }
 
 section{
@@ -83,6 +81,8 @@ section{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
+  border: 3px solid #002366;
 }
 
 .header .logo{
@@ -96,11 +96,11 @@ section{
 .header .navbar a{
   font-size: 2rem;
   margin-left: 2rem;
-  color: white;
+  color: var(--color6);;
 }
 
 .header .navbar a:hover{
-  color: var(--color5);
+  color: var(--color6);
 }
 
 #menu-btn{
@@ -110,6 +110,41 @@ section{
   display: none;
 }
 
+.offers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.offer {
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.price span {
+  font-size: 18px;
+  color: #666;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  font-size: 14px;
+  margin: 10px 0;
+}
 
 /***************/
 /*   tarif     */
@@ -150,9 +185,10 @@ section{
 .formule .box-container .box{
   text-align: center;
   border-radius:.5rem;
-  background: var(--color7);
+  background: white;
   box-shadow: var(--box-shadow);
   padding: 2rem;
+  border: 1px solid #002366;
 }
 
 .formule .box-container .box h3{
@@ -160,42 +196,18 @@ section{
   font-family: chapaza;
   text-transform: uppercase;
   color: var(--color6);
+
 }
 
-.formule .box-container .box .prix{
-  padding: 1rem;
-  border-radius: .5rem;
-  background: var(--color5);
-  color: var(--color6);
-  font-size: 3rem;
-  margin: 1rem;
-  border: .2rem solid var(--color4);
-}
-
-.formule .box-container .box .list1 p{
-  font-size: 1.5rem;
-  color: var(--color6);
-  padding: 1rem 0;
-}
-
-.formule .box-container .box .list2 p{
-  font-size: 1.5rem;
-  color: var(--color6);
-  padding: 1rem 0;
-}
-
-.formule .box-container .box .list3 p{
-  font-size: 1.5rem;
-  color: var(--color6);
-  padding: 1rem 0;
-}
-
-.box .list1{
-  height: 398px;
-}
 
 .box .list2{
-  height: 308px;
+  height: 140px;
+}
+
+.logov2{
+  display: block;
+  margin: 15px auto;
+
 }
 
 
@@ -254,16 +266,18 @@ section{
     top: 99%;
     left: 0;
     right: 0;
-    background: var(--color7);
+    background: var(--color4);
     border-top: var(--border);
     padding: 2rem;
     clip-path: polygon(0 0 , 100% 0 , 100% 0 , 0 0);
     transition: .2s linear;
+    
   }
   .header .navbar a{
     display: block;
     margin: 2rem;
     text-align: center;
+    color: white;
   }
 
   .header .navbar.active{
