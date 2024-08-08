@@ -66,7 +66,7 @@ body{
   max-width: 1200px;
   margin: 10rem auto;
   box-shadow: var(--box-shadow);
-  border: 3px solid #002366;
+
 }
 
 section{
@@ -192,17 +192,14 @@ ul li {
 }
 
 .formule .box-container .box h3{
-  font-size: 2.5rem;
-  font-family: chapaza;
+  font-size: 2.4rem;
   text-transform: uppercase;
   color: var(--color6);
-
+  height: 70px;
 }
-
 
 .box .list2{
   height: 140px;
-  
 }
 
 .logov2{
@@ -211,7 +208,11 @@ ul li {
 
 }
 
-
+.note {
+  font-size: 12px;
+  margin-top: 15px;
+  color: #666;
+}
 
 
 /*************/
@@ -241,12 +242,7 @@ ul li {
 
   }
   /*retirer l'effet de list2 */
-  .box .list2{
-    height: 400px;
-  }
-  .box .list1{
-    height: 400px;
-  }
+  
   .formule .box-container .box .btn {
     margin-top: 3rem;
   }
