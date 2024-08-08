@@ -1,5 +1,20 @@
-
-
+/*event d'ecriture */
+$('.menu').on('click', function(){
+    $('.toggle').click();
+  });
+  
+  $(document).ready(function(){
+  // typing text animation script
+  var typed = new Typed(".typing", {
+      strings: ["Tout commence par un clic"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: false
+  });
+  
+});
+  
+/*ferme le menu quand on clique sur un lien*/
 let toggle = document.querySelector('.toggle');
 let body = document.querySelector('body');
 let liens = document.getElementsByClassName('menu__link');
@@ -41,10 +56,6 @@ tl.from('.text_top_home .sep', {
     width: '0px'
 })
 
-/*ferme le menu quand on clique sur un lien*/
-$('.menu').on('click', function(){
-  $('.toggle').click();
-});
 
 
 

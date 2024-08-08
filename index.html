@@ -14,6 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>    
     <link rel="stylesheet" href="main.css">
     </head>
     <body>
@@ -45,9 +46,7 @@
               <div class="text_mid_home">
                 <h1>CLic & Start</h1>
               </div>
-              <div class="text_bottom">
-                <h2>Tout commence par un clic</h2>
-              </div>
+              <div class="text_bottom"><span class="typing"></span></div>
             </div>
           </div>
         </section>
@@ -75,6 +74,9 @@
 
       <!-- photos section start -->
       <section class="conf" id="conf">
+        <div class="image-container">
+          <img src="img/6-4-1024x630.jpg" alt="conférence">
+        </div>
           <div class="titre_conf">
               <h2>Conférences</h2>
               <div class="barre"></div>
@@ -85,63 +87,40 @@
                 <p>Venez apprendre à vous enrichir et à entreprendre</p>
               <a href="https://www.billetweb.fr/multi_event.php?&multi=35845&color=023e8f&from_event=1153006" class="btn"> Voir réservation</a>
             </div>
-            <!--
-            <?php
-              //exemple de tableau d'evenements
-              $events = [
-                [
-                  "title" => "Senrichir et entreprendre",
-                  "date" => "2022-06-25",
-                  "description" => "Venez apprendre à vous enrichir et à entreprendre",
-                  "image" => "img/entreprendre.jpg",
-                  "link" => "https://www.billetweb.fr/shop.php?event=senrichir-et-entreprendre&multi=35845&color=023e8f&color=023e8f&from_multi=1"
-                ],
-                [
-                  "title" => "Senrichir et entreprendre",
-                  "date" => "2022-06-25",
-                  "description" => "Venez apprendre à vous enrichir et à entreprendre",
-                  "image" => "img/entreprendre.jpg",
-                  "link" => "https://www.billetweb.fr/shop.php?event=senrichir-et-entreprendre&multi=35845&color=023e8f&color=023e8f&from_multi=1"
-                ],
-                [
-                  "title" => "Senrichir et entreprendre",
-                  "date" => "2022-06-25",
-                  "description" => "Venez apprendre à vous enrichir et à entreprendre",
-                  "image" => "img/entreprendre.jpg",
-                  "link" => "https://www.billetweb.fr/shop.php?event=senrichir-et-entreprendre&multi=35845&color=023e8f&color=023e8f&from_multi=1"
-                ],
-                [
-                  "title" => "Senrichir et entreprendre",
-                  "date" => "2022-06-25",
-                  "description" => "Venez apprendre à vous enrichir et à entreprendre",
-                  "image" => "img/entreprendre.jpg",
-                  "link" => "https://www.billetweb.fr/shop.php?event=senrichir-et-entreprendre&multi=35845&color=023e8f&color=023e8f&from_multi=1"
-                ]
-              ];
-
-              //affichage des evenements
-              foreach($events as $event){
-                echo "<div class='event'>";
-                echo "<img src='".$event["image"]."' alt=''>";
-                echo "<div class='event-info'>";
-                echo "<h3>".$event["title"]."</h3>";
-                echo "<p>".$event["date"]."</p>";
-                echo "<p>".$event["description"]."</p>";
-                echo "<a href='".$event["link"]."'> acheter reservation</a>";
-                echo "</div>";
-                echo "</div>";
-              }
-            ?>
-            -->
           </div>
-
           <div class="image-container">
-            <img src="img/6-4-1024x630.jpg" alt="conférence">
+            
             <img src="img/7-2-1024x576.jpg" alt="conférence">
           </div>
 
       </section> 
 
+      <!-- prestations section start -->
+    <section class="prestations" id="prestations">
+      <div class="container2">
+          <div class="logo-prestation">
+              <img src="img/lg.png" alt="CLICSTART Logo" />
+          </div>
+          <h2 class="title">PRESTATIONS SUR DEVIS</h2>
+          <div class="content-prestation">
+              <p>Nos prestations sur devis concernent :</p>
+              <ul>
+                  <li>Stratégie d'entreprise</li>
+                  <li>Fiscalité</li>
+                  <li>Plan de financement</li>
+                  <li>Développement de patrimoine</li>
+                  <li>Accompagnement spécifique</li>
+                  <li>Formations sur mesure de dirigeant(e)s et cadres d'entreprise</li>
+                    <ul class="sub-list">
+                      <li>Management</li>
+                      <li>Gestion et administration d'entreprise</li>
+                      <li>Comptabilité...</li>
+                  </ul>
+              </ul>
+
+          </div>
+      </div>
+  </section>
 
 
         <!-- contact section start -->
@@ -174,7 +153,7 @@
       </section>
   <!-- footer section start -->
   <footer>
-    <span>Created By YG</a> | SAS CLICSTART Filiale Stratégie Conseil Group et SAS Firstset | 2024 All rights reserved.</span>
+    <span> SAS CLICSTART Filiale Stratégie Conseil Group et SAS Firstset | 2024 All rights reserved. | Created By <a href="https://github.com/Tebayai" class="github">Tebayai</a></span>
   </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

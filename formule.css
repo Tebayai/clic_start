@@ -50,13 +50,11 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: #002366;
 }
-
 
 .container{
   border-radius: .5rem;
@@ -139,7 +137,6 @@ section{
 
 .price span {
   font-size: 15px;
-  color: #666;
 }
 
 ul {
@@ -189,6 +186,10 @@ ul li {
 }
 
 .formule .box-container .box{
+  flex: 1; /* Assure que chaque box prend une part égale */
+  display: flex;
+  flex-direction: column; /* Permet d'organiser les éléments en colonne */
+  justify-content: space-between; /* Étend le contenu de la box pour qu'il prenne toute la hauteur disponible */
   text-align: center;
   border-radius:.5rem;
   background: white;
@@ -197,27 +198,26 @@ ul li {
   border: 1px solid #002366;
 }
 
+
 .formule .box-container .box h3{
   font-size: 2.4rem;
   text-transform: uppercase;
   color: var(--color6);
-  height: 70px;
+  margin-bottom: 20px;
 }
 
-.box .list2{
-  height: 140px;
-}
+
 
 .logov2{
   display: block;
-  margin: 15px auto;
-
+  margin: 45px auto;
 }
 
 .note {
+  font-style: italic;
   font-size: 12px;
   margin-top: 15px;
-  color: #666;
+  margin-bottom: 20px;
 }
 
 
@@ -289,6 +289,13 @@ ul li {
 
   .heading{
     font-size: 4rem;
+  }
+
+  .logov2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
   }
 
 

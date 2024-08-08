@@ -126,6 +126,11 @@ html{
   margin-left: 50px;
 }
 
+.text_bottom span{
+  color: var(--color4);
+}
+
+
 /* About */
 
 .about {
@@ -278,7 +283,67 @@ html{
   height: auto;
 }
 
+/*****************/
+/* Prestation   */
+/*****************/
 
+.container2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.title {
+  color: #002366;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.content-prestation {
+  border: #002049 2px solid;
+}
+.content-prestation p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  text-align: left;
+  color: #002366;
+}
+
+.content-prestation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  margin-left: 50px;
+  font-size: 1rem;
+  text-align: left;
+  color: #002366;
+}
+
+.content-prestation ul li::before {
+  content: "•";
+  color: #002366;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+  
+}
+
+.sub-list {
+  margin-left: 2rem;
+}
+
+.sub-list ul li::before {
+  content: "-";
+}
 
 
 /******************************/
@@ -396,6 +461,10 @@ footer{
   padding: 15px 23px;
   color: var(--color6);
   text-align: center;
+}
+
+.github{
+  text-decoration: none;
 }
 
 /* Responsive */
