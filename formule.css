@@ -63,7 +63,7 @@ body{
   backdrop-filter: blur(.5rem);
   max-width: 1200px;
   margin: 10rem auto;
-  box-shadow: var(--box-shadow);
+  /*box-shadow: var(--box-shadow);*/
 
 }
 
@@ -80,7 +80,7 @@ section{
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  border: 3px solid #002366;
+  /*border: 3px solid #002366;*/
 }
 
 .header .logo{
@@ -120,6 +120,7 @@ section{
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   background-color: #fff;
+  height: 340px;
 }
 
 .price {
@@ -139,6 +140,10 @@ section{
   font-size: 15px;
 }
 
+h3 span{
+  font-size: 19px;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -148,6 +153,10 @@ ul {
 ul li {
   font-size: 14px;
   margin: 10px 0;
+}
+
+.list1{
+  height: 190px;
 }
 
 /***************/
@@ -211,6 +220,7 @@ ul li {
 .logov2{
   display: block;
   margin: 45px auto;
+  width: 500px;
 }
 
 .note {
@@ -298,13 +308,17 @@ ul li {
     width: 250px;
   }
 
+  h3 span{
+    font-size: 16px;
+  }
+
 
 }
 
-@media (max-width:450px){
+@media (max-width:500px){
 
   .container{
-    margin: 2rem;
+    margin: 0;
   }
 
 }
