@@ -66,7 +66,21 @@ html{
   max-width: 200px;
   margin: 10%;
 }
+/* 
+.blurred-logo {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.5;
+  z-index: 1;
+  top: -100px;
+  right: -100px;
+}
 
+.blurred-logo img {
+  width: 1200px;
+}
+*/
 .menu {
   position: absolute;
   top: 2rem;
@@ -94,6 +108,7 @@ html{
 
 .text_home{
   width: 80%;
+  z-index: 10;
 }
 
 .text_top_home .sep{
@@ -136,8 +151,8 @@ html{
 .about {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #0149a7;
-  
+  border: #002049 2px solid;
+  margin: 30px;
 }
 
 .entete {
@@ -175,7 +190,7 @@ html{
 .entete__titre .barre {
   width: 120px;
   height: 5px;
-  background: white;
+  background: #002049;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
@@ -184,6 +199,13 @@ html{
   line-height: 1.4rem;
   text-align: justify;
   margin-right: 100px;
+  color: #002049;
+  margin: 30px;
+}
+
+.texte-presentation{
+  border: 4px solid #002049;
+  margin: 20px;
 }
 
 .about__corps {
@@ -305,6 +327,7 @@ html{
   font-size: 2rem;
   margin-bottom: 20px;
 }
+
 
 .content-prestation {
   border: #002049 2px solid;
@@ -478,13 +501,22 @@ footer{
   }
 }
 /* media contact */
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1200px) {
   .containerC .containerForm {
     display: flex;
     flex-direction: column;
     position: relative;
     left: 70px;
   }
+
+  .entete__slogan {
+    display: none;
+  }
+
+  .entete__titre {
+    width: 100%;
+}
+
 
 }
 
@@ -558,18 +590,17 @@ footer{
   .entete__titre h2 {
     margin-right: 20px;
   }
+  .containerC .containerForm {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 12px;
+  }
 
 
 }
 
-@media all and (max-width: 900px) {
-.containerC .containerForm {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  left: 12px;
-}
-}
+
 /* Mobile */
 @media all and (max-width: 767px) {
   .text_mid_home h1 {
@@ -577,13 +608,7 @@ footer{
       line-height: 4rem;
   }
 
-  .entete__slogan {
-      display: none;
-  }
 
-  .entete__titre {
-      width: 100%;
-  }
   
   .about__corps {
       flex-direction: column;
@@ -613,7 +638,56 @@ footer{
       grid-template-columns: repeat(1, 1fr);
   }
 
+  .logo img {
+    max-width: 150px;
+    margin: 5%;
+  }
+  
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .menu li {
+    margin-bottom: 1rem;
+  }
+
+  .text_mid_home h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+
+  .about__corps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__corps__block {
+    width: 80%;
+  }
+  
+  .containerC {
+    flex-direction: column;
+  }
+
+  .containerC .contactInfo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .containerC .contactForm {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .entete__titre h2 {
+    margin-right: 20px;
+    font-size: 2rem;
+  }
+
+
 }
+
 
 @media all and (max-width: 700px) {
   .about__corps {
@@ -621,6 +695,16 @@ footer{
     margin-left: 12%;
     margin-right: 12%;
 }
+
+  .btn{
+    position: relative;
+    left: 0px;
+  }
+
+  .logo-prestation img {
+    max-width: 100px;
+    margin: 0 auto;
+  }
 
 }
 

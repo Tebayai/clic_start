@@ -41,12 +41,8 @@ html::-webkit-scrollbar{
   width: 1rem;
 }
 
-html::-webkit-scrollbar-track{
-  background: transparent;
-}
-
 html::-webkit-scrollbar-thumb{
-  background: var(--color5);
+  background: #002366;
 }
 
 body{
@@ -57,13 +53,9 @@ body{
 }
 
 .container{
-  border-radius: .5rem;
   overflow: hidden;
-  background: white;
-  backdrop-filter: blur(.5rem);
   max-width: 1200px;
   margin: 10rem auto;
-  /*box-shadow: var(--box-shadow);*/
 
 }
 
@@ -73,27 +65,18 @@ section{
 
 .header{
   position: relative;
-  z-index: 100;
-  background: var(--color7);
-  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
-  /*border: 3px solid #002366;*/
 }
 
 .header .logo{
-  font-size: 2.5rem;
-  font-family: chapaza;
-  color: var(--color3);
-  width: 100px;
-  height: 100px;
+  height: 200px;
+  width: 200px;
 }
 
 .header .navbar a{
   font-size: 2rem;
-  margin-left: 2rem;
   color: var(--color6);;
 }
 
@@ -209,7 +192,6 @@ ul li {
 
 
 .formule .box-container .box h3{
-  font-size: 2.4rem;
   text-transform: uppercase;
   color: var(--color6);
   margin-bottom: 20px;
@@ -230,6 +212,14 @@ ul li {
   margin-bottom: 20px;
 }
 
+
+.titleup{
+  font-size: 1.9rem;
+}
+
+.titleup2{
+  font-size: 2.4rem;
+}
 
 /*************/
 /*   Media   */
