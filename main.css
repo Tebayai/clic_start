@@ -151,7 +151,6 @@ html{
 .about {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  border: #002049 2px solid;
   margin: 30px;
 }
 
@@ -204,7 +203,7 @@ html{
 }
 
 .texte-presentation{
-  border: 4px solid #002049;
+  border: 2px solid #002049;
   margin: 20px;
 }
 
