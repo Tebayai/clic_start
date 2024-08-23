@@ -11,6 +11,15 @@ $('.menu').on('click', function(){
       backSpeed: 60,
       loop: false
   });
+  $(window).scroll(function(){
+    // sticky navbar on scroll script
+    if(this.scrollY > 20){
+        $('.navmenu').addClass("sticky");
+    }else{
+        $('.navmenu').removeClass("sticky");
+    }
+
+    }); 
   
 });
   
@@ -53,9 +62,32 @@ tl.from('.text_top_home, .text_mid_home, .text_bottom', {
 
 tl.from('.text_top_home .sep', {
     duration: 0.75,
-    width: '0px'
+    width: 0,
+    ease: 'power1.out' // Optional easing for smoother animation
 })
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Récupérer toutes les sections et éléments de menu
+    const sections = document.querySelectorAll('section');
+    const navLi = document.querySelectorAll('nav ul li');
 
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Enlever la classe 'active' de tous les éléments <li>
+                navLi.forEach(li => li.classList.remove('active'));
+                
+                // Ajouter la classe 'active' à l'élément correspondant
+                const activeSection = entry.target.getAttribute('id');
+                document.querySelector(`nav ul li a[href="#${activeSection}"]`).parentElement.classList.add('active');
+            }
+        });
+    }, {
+        threshold: 0.7 // 70% visible pour être considéré comme "active"
+    });
+
+    // Observer chaque section
+    sections.forEach(section => observer.observe(section));
+});
 

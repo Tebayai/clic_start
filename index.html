@@ -1,72 +1,62 @@
 <!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <title>ClicStart - Tout commence par un clic</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <link rel= "canonical" href= "http://jour_de_rêve/main.html" />
+    <link rel= "canonical" href= "http://CLIC_START/index.html">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>    
     <link rel="stylesheet" href="main.css">
     </head>
     <body>
-      <!-- home section start -->
-        <section class="home">
-          <div class="overlay">
-              <div class="logo">
-                <img src="img/logo.PNG" alt="Logo Clic & Start" />
-              </div>
-              <div id="navbar">
+            <nav class="navmenu">
+              <div class="max-width">
+                <div class="logonav"><img src="img/1.PNG" alt="Logo Clic & Start"></div>
                 <ul class="menu">
-                    <li><a href="#home">Accueil</a></li>
-                    <li><a href="#conf">Conférences</a></li>
-                    <li><a href="formule.html">Nos Offres</a></li>
-                    <li><a href="#cont">Contact</a></li>
+                  <li><a href="#home">Accueil</a></li>
+                  <li><a href="#conf">Conférences</a></li>
+                  <li><a href="formule.html">Nos Offres</a></li>
+                  <li><a href="#prestations">a Propos</a></li>
+                  <li><a href="#cont">Contact</a></li>
+                </ul>
 
-                  </ul>
+                <div class="toggle">
+                  <i class="fas fa-bars ouvrir"></i>
+                  <i class="fas fa-times fermer"></i>
+                </div>
+            </nav>
+      <!-- home section start -->
+        <section class="home" id="home">
+            <div class="overlay">
 
-              </div>
 
-              <div class="toggle">
-                <i class="fas fa-bars ouvrir"></i>
-                <i class="fas fa-times fermer"></i>
-              </div>
 
             <div class="text_home">
+              <div class="img_top_home">
+                <img src="img/2.PNG" alt="Logo Clic & Start">
+              </div>
               <div class="text_top_home">
                 <div class="sep"></div>
                 <p>Création et développement des sociétés</p>
               </div>
-              <div class="text_mid_home">
-                <h1>CLic & Start</h1>
-              </div>
               <div class="text_bottom"><span class="typing"></span></div>
             </div>
-            <!--
-            <div class="blurred-logo">
-              <img src="img/8.png" alt="Logo flou">
-          </div>-->
           </div>
         </section>
 
         <!-- about section start -->
-        <section class="about" data-aos="fade-up" id="about">
+        <section class="about" data-aos="fade-up" id="home">
           <div class="container">
               <div class="entete">
-                  <div class="entete__slogan">
-                      <img src="img/logo.PNG" alt="">
-                  </div>
                   <div class="entete__titre">
                       <h2>Présentation</h2>
-                      <div class="barre"></div>
                       <div class="texte-presentation">
                         <p>Bonjour et Bienvenus à Vous !</p>
 
@@ -75,13 +65,15 @@
                           <p>Nous vous transmettrons notre expertise afin que vous puissiez acquérir les compétences essentielles pour assurer la pérennité et le succès de votre affaire. Nous serons à vos côtés à chaque étape de votre parcours entrepreneurial avec un soutien continu et des conseils adaptés à vos besoins.</p>
                           <p>Nous vous accompagnons également dans vos échanges avec les institutions financières, administratives et fiscales afin que vous ayez la meilleure collaboration possible avec ces organismes.</p>
                       </div>
-                      <div class="texte-presentation">
+                      <div class="texte-presentation2">
                         <p>La SAS CLICSTART vous propose aussi des services d’orientation et de formation qui vous apporteront la confiance nécessaire dans votre rôle de direction d’entreprise et garantir votre réussite.
 
                           Contactez-nous dès maintenant pour bénéficier de notre accompagnement professionnel et personnalisé sous le format que vous choisirez (individualisé ou en séminaire).</p>
                       </div>
+                </div>
               </div>
-      </section>
+          </div> 
+          </section>
 
 
       <!-- photos section start -->
@@ -111,58 +103,52 @@
     <section class="prestations" id="prestations">
       <div class="container2">
           <div class="logo-prestation">
-              <img src="img/lg.png" alt="CLICSTART Logo" />
+              <img src="img/lg.png" alt="CLICSTART Logo">
           </div>
           <h2 class="title">PRESTATIONS SUR DEVIS</h2>
+          <div class="testtt">
           <div class="content-prestation">
-              <p>Nos prestations sur devis concernent :</p>
               <ul>
+                <li>Nos prestations sur devis concernent :</li>
+                <br>
                   <li>Stratégie d'entreprise</li>
                   <li>Fiscalité</li>
                   <li>Plan de financement</li>
                   <li>Développement de patrimoine</li>
                   <li>Accompagnement spécifique</li>
+                  <br>
                   <li>Formations sur mesure de dirigeant(e)s et cadres d'entreprise</li>
-                    <ul class="sub-list">
                       <li>Management</li>
                       <li>Gestion et administration d'entreprise</li>
                       <li>Comptabilité...</li>
-                  </ul>
               </ul>
 
           </div>
+        </div>
       </div>
   </section>
 
 
         <!-- contact section start -->
       <section class="contact" id="cont">
-        <div class="content">
-            <h2>Contact</h2>
-        </div>
-        <div class="containerC">
-          <div class="containerInfo">
-            <div class="box">
-              <div class="icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                <div class="text">
-                    <h3>Téléphone</h3>
-                    <p>06.67.28.85.66 - 06.66.38.31.27</p>
-                </div>  
-            </div>
-
-            <div class="box">
-              <div class="icon"><i class="fa-regular fa-envelope"></i></div>
-                <div class="text">
-                    <h3>Email</h3>
-                    <p class="email">contact@clicstart.fr</p>
-                </div>  
-            </div>
-            <div>
-              <p>Important : laissez nous un message </p>
-            </div>
-
+        <div class="contact-section">
+          <h2>NOUS CONTACTER</h2>
+          <div class="contacts">
+              <div class="contact-card">
+                  <p>Samuel MOUITY</p>
+                  <p>06.67.28.85.66</p>
+                  <p><a href="mailto:samuel.m@clicstart.fr">samuel.m@clicstart.fr</a></p>
+                  <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <div class="contact-card">
+                  <p>Anna FRUCHARD</p>
+                  <p>06.66.38.31.27</p>
+                  <p><a href="mailto:anna.f@clicstart.fr">anna.f@clicstart.fr</a></p>
+                  <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
           </div>
-      </section>
+      </div>
+    </section>
   <!-- footer section start -->
   <footer>
     <span> SAS CLICSTART Filiale Stratégie Conseil Group et SAS Firstset | 2024 All rights reserved. | Created By <a href="https://github.com/Tebayai" class="github">Tebayai</a></span>

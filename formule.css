@@ -205,6 +205,12 @@ ul li {
   width: 500px;
 }
 
+.logov3{
+  display: block;
+  margin: 45px auto;
+  width: 500px;
+}
+
 .note {
   font-style: italic;
   font-size: 12px;
