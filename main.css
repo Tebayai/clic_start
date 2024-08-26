@@ -226,119 +226,57 @@ nav ul li.active a {
 }
 
 
-/* About */
 
+/* Présentation */
 .about {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 3rem 2rem;
   margin: 30px;
+  height: 80vh;
 }
 
-.entete {
-  display: flex;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; /* Nécessaire pour le positionnement absolu des enfants */
 }
-
-.entete__slogan {
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.entete__slogan img {
-  width: 400px;
-  height: 350px;
-  margin-right: 1rem;
-}
-
 
 .entete__titre {
-  color: white;
+  color: #002049;
+  text-align: center;
+  width: 100%;
 }
 
 .entete__titre h2 {
   font-size: 3rem;
-  color: #002049;
-  font-family: chapaza;
-  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
 }
 
-.entete__titre h2::before{
+.entete__titre h2::before {
   content: "";
   position: absolute;
-  bottom: -150px;
+  bottom: -15px;
   left: 50%;
   width: 180px;
   height: 3px;
   background: #111;
-  transform: translate(-50%);
+  transform: translateX(-50%);
 }
 
-.entete__titre .barre {
-  position: relative;
-  width: 120px;
-  height: 5px;
-  background: #002049;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  align-items: center;
-  text-align: center;
+.texte-presentation {
+  border: 2px solid #002049;
+  padding: 20px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  position: absolute;
 }
 
-.entete__titre p {
-  line-height: 1.4rem;
+.texte-presentation p {
+  line-height: 1.6;
   text-align: justify;
-  margin-right: 100px;
   color: #002049;
-  margin: 30px;
 }
 
-.texte-presentation{
-  border: 2px solid #002049;
-  margin: 20px;
-  width: 60%;
-}
-
-.texte-presentation2{
-  border: 2px solid #002049;
-  margin: 20px;
-  width: 60%;
-}
-
-.about__corps {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 10rem;
-  margin-right: 10rem;
-}
-
-.about__corps__block {
-  width: 31%;
-}
-
-.about__corps__block img {
-  height: 500px;
-  width: 500px;
-  border-radius: 10px;
-}
-
-.about__corps__block h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  margin-top: 0.5rem;
-  text-align: center;
-  color: var(--color4);
-}
-
-.about__corps__block p {
-  line-height: 1.4rem;
-  text-align: justify;
-  color: var(--color6);
-}
 
 /*****************/
 /* Conférences   */
@@ -411,20 +349,12 @@ nav ul li.active a {
 
 .prestations{
   position: relative;
-  min-height: 80vh;
-  padding: 50px 100px;
+  height: 80vh;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.container2 {
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-  max-width: 900px;
-  width: 100%;
 }
 
 .logo img {
@@ -433,20 +363,16 @@ nav ul li.active a {
   margin: 0 auto;
 }
 
-.title {
-  color: #002366;
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
 
 
 .content-prestation {
   background: radial-gradient(ellipse 50% 70% at center, #081c5f 30%, #05194d 50%, #001850 70%, #01081a 100%);
   color: white;
-  padding: 40px;
+  padding: 50px;
   border-radius: 500px;
   width: 900px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 
@@ -454,6 +380,41 @@ nav ul li.active a {
   list-style-type: none;
   font-size: 1rem;
 }
+
+/********************/
+/*   grande image   */
+/********************/
+
+.imgfutur img{
+  width: 100%;
+}
+
+/********************/
+/*      about       */
+/********************/
+
+.containerbubble {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.bubble {
+  background: radial-gradient(ellipse 50% 70% at center, #081c5f 30%, #05194d 50%, #001850 70%, #01081a 100%);
+  border-radius: 500px / 300px;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 1.5;
+  position: absolute;
+  max-width: 700px;
+}
+
+
 
 /******************************/
 /*      Contact Section       */
@@ -546,6 +507,45 @@ footer{
 
 
 }
+/*special inversement */
+@media (min-width: 992px) {
+  .container {
+      display: block;
+  }
+  .top {
+      top: 20%;
+      left: 35%;
+      transform: translateX(-50%);
+      position: absolute;
+  }
+
+  .top p{
+    margin: 8px;
+  }
+
+  .bottom-left {
+      bottom: 10%;
+      left: 5%;
+      position: absolute;
+  }
+
+  .middle-right {
+      top: 60%;
+      right: 2%;
+      transform: translateY(-50%);
+      border-radius: 500px / 500px;
+      position: absolute;
+  }
+
+  .middle-right p{
+    margin: 10px;
+  }
+  .entete {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+}
 
 /* Tablettes */
 @media all and (max-width: 991px) {
@@ -578,7 +578,6 @@ footer{
       z-index: 20;
       position: absolute;
       top: 1rem;
-      left: 1rem;
   }
   .menu {
     background-color: white;
@@ -621,6 +620,30 @@ footer{
     border-radius: 50px;
   }
 
+  .containerbubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+  .bubble {
+      position: static;
+      width: 100%; /* Assure que chaque bulle prend toute la largeur */
+      margin: 10px; /* Centre les bulles horizontalement */
+      box-sizing: border-box; /* S'assure que padding/border n'affecte pas la largeur */
+      border-radius: 50px;
+  }
+
+  .navmenu.sticky{
+    border-bottom: none;
+    display: none;
+  }
+
+  .image-container img{
+    max-width: 90%;
+  }
 
 }
 
@@ -718,6 +741,7 @@ footer{
     padding: 30px;
     border-radius: 50px;
   }
+
 
 
 }
