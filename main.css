@@ -43,8 +43,8 @@ html{
 /* Transition barre menu quand il y a un scroll */
 .navmenu.sticky{
   padding: 15px 0;
-  border-bottom: 2px solid #002049;
   background-color: #fff;
+  height: 80px;
 }
 /* Taille max menu */
 .navmenu .max-width{
@@ -366,10 +366,10 @@ nav ul li.active a {
 
 
 .content-prestation {
-  background: radial-gradient(ellipse 50% 70% at center, #081c5f 30%, #05194d 50%, #001850 70%, #01081a 100%);
-  color: white;
+  background: white;
+  color: #002049;
+  border: #001850 2px solid;
   padding: 50px;
-  border-radius: 500px;
   width: 900px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -402,9 +402,9 @@ nav ul li.active a {
 }
 
 .bubble {
-  background: radial-gradient(ellipse 50% 70% at center, #081c5f 30%, #05194d 50%, #001850 70%, #01081a 100%);
-  border-radius: 500px / 300px;
-  color: white;
+  background: white;
+  border: 2px solid #002049;
+  color: #002049;
   padding: 20px;
   font-size: 16px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -431,10 +431,9 @@ nav ul li.active a {
 }
 
 .contact-section {
-  background: radial-gradient(ellipse 50% 70% at center, #081c5f 30%, #05194d 50%, #001850 70%, #01081a 100%);
-  color: white;
+  background: white;
   padding: 40px;
-  border-radius: 500px / 150px;
+  border: #001850 2px solid; 
   text-align: center;
   max-width: 900px;
   width: 100%;
@@ -533,7 +532,6 @@ footer{
       top: 60%;
       right: 2%;
       transform: translateY(-50%);
-      border-radius: 500px / 500px;
       position: absolute;
   }
 
