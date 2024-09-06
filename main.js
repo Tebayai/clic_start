@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, {
-        threshold: 0.7 // 70% visible pour être considéré comme "active"
+        threshold: 0.3 // 70% visible pour être considéré comme "active"
     });
 
     // Observer chaque section

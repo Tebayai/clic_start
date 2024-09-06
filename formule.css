@@ -9,14 +9,7 @@
   --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
-}
+
 
 @font-face {
   font-family: chapaza;
@@ -32,25 +25,6 @@
 /*   menu       */
 /****************/
 
-html{
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
-
-html::-webkit-scrollbar{
-  width: 1rem;
-}
-
-html::-webkit-scrollbar-thumb{
-  background: #002366;
-}
-
-body{
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #002366;
-}
 
 .container{
   overflow: hidden;
@@ -59,44 +33,10 @@ body{
 
 }
 
-section{
+.formule{
   padding: 2rem;
 }
 
-.header{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header .logo{
-  height: 50px;
-  width: 50px;
-}
-
-.header .navbar a{
-  font-size: 2rem;
-  color: var(--color6);;
-}
-
-.header .navbar a:hover{
-  color: var(--color6);
-}
-
-#menu-btn{
-  font-size: 2.5rem;
-  color: var(--color3);
-  cursor: pointer;
-  display: none;
-}
-
-.offers {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
 
 .offer {
   padding: 20px;
@@ -127,13 +67,24 @@ h3 span{
   font-size: 19px;
 }
 
-ul {
+.list1 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-ul li {
+.list1 ul li {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.list2 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list2 ul li {
   font-size: 14px;
   margin: 10px 0;
 }
@@ -155,7 +106,7 @@ ul li {
   margin-top: 2rem;
 }
 
-.btn{
+.btn_formule{
   display: inline-block;
   padding: 1rem 3rem;
   border: .2rem solid var(--color4);
@@ -164,9 +115,10 @@ ul li {
   border-radius: .5rem;
   font-size: 1.7rem;
   word-break: break-word;
+  text-decoration: none ;
 }
 
-.btn:hover{
+.btn_formule:hover{
   background: var(--color5);
   color: var(--color1);
 }
@@ -255,20 +207,12 @@ ul li {
   }
   /*retirer l'effet de list2 */
   
-  .formule .box-container .box .btn {
+  .formule .box-container .box .btn_formule {
     margin-top: 3rem;
   }
 }
 
 @media (max-width:768px){
-  #menu-btn{
-    display: inline-block;
-    transition: .2s linear;
-  }
-
-  #menu-btn.fa-times{
-    transform: rotate(180deg);
-  }
 
   .header .navbar{
     position: absolute;

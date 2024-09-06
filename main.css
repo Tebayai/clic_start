@@ -162,7 +162,7 @@ nav ul li.active a {
 }
 
 .img_top_home img {
-  max-width: 100%; /* Ajuste la taille maximale de l'image */
+  width: 700px;
   height: auto; /* Garde les proportions de l'image */
   margin-bottom: 20px; /* Espacement entre l'image et le texte */
 }
@@ -288,13 +288,9 @@ nav ul li.active a {
   background: white;
 }
 
-.conf h2 {
-  position: relative;
-  top: 10px;
-  font-size: 3rem;
-  color: var(--color4);
-  text-align: center;
-  font-family: chapaza;
+
+.conftxt{
+  margin: 150px;
 }
 
 /* php */
@@ -341,6 +337,7 @@ nav ul li.active a {
 }
 .image-container img {
   height: auto;
+  width: 140%;
 }
 
 .logo-prestation{
@@ -424,6 +421,7 @@ nav ul li.active a {
   line-height: 1.5;
   position: absolute;
   max-width: 700px;
+  border-radius: 20px;
 }
 
 
@@ -451,6 +449,7 @@ nav ul li.active a {
   max-width: 900px;
   width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
 .contact-section h2 {
@@ -529,6 +528,8 @@ footer{
       left: 30%;
       transform: translateX(-50%);
       position: absolute;
+      font-size: 19px;
+      border-radius: 20px;
   }
 
   .top p{
@@ -539,6 +540,8 @@ footer{
       bottom: 10%;
       left: 5%;
       position: absolute;
+      font-size: 19px;
+      border-radius: 20px;
   }
 
   .middle-right {
@@ -546,10 +549,12 @@ footer{
       right: 0%;
       transform: translateY(-50%);
       position: absolute;
+      border-radius: 20px;
   }
 
   .middle-right p{
     margin: 10px;
+    font-size: 19px;
   }
   .entete {
     flex-direction: row;
@@ -651,7 +656,11 @@ footer{
   }
 
   .image-container img{
-    max-width: 90%;
+    max-width: 100%;
+  }
+
+  .conftxt{
+    margin: 0px;
   }
 
 }
@@ -729,8 +738,7 @@ footer{
   }
   
   .entete__titre h2 {
-    margin-right: 20px;
-    font-size: 2rem;
+    margin-bottom: 30px;
   }
   .contact-section {
     padding: 20px;
@@ -769,7 +777,7 @@ footer{
   }
 
   .logo-prestation img {
-    max-width: 100px;
+    max-width: 260px;
     margin: 0 auto;
   }
 
