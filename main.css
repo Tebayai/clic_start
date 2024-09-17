@@ -673,10 +673,7 @@ footer{
     font-size: 0.8rem;
   }
   .text_bottom{
-    font-size: 0.8rem;
-  }
-  .img_top_home img {
-    width: 250px; /* Réduit la taille de l'image pour les petits écrans */
+    font-size: 1.8rem;
   }
   .text_top_home .sep {
     display: none;
@@ -801,7 +798,7 @@ footer{
   }
 
   .img_top_home img {
-    width: 200px; /* Encore plus petit pour les très petits écrans */
+    width: 350px; /* Encore plus petit pour les très petits écrans */
   }
   .navmenu .menu {
     padding: 1rem;
@@ -813,7 +810,7 @@ footer{
   }
 
   .text_top_home p {
-    font-size: 0.5rem;
+    font-size: 1.80rem;
     margin: 0;
   }
 
