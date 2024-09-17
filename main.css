@@ -251,6 +251,7 @@ nav ul li.active a {
   font-size: 3rem;
   margin-bottom: 1rem;
   position: relative;
+  font-family: chapaza;
 }
 
 .entete__titre h2::before {
