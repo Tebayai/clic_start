@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 @font-face {
@@ -251,7 +250,6 @@ nav ul li.active a {
   font-size: 3rem;
   margin-bottom: 1rem;
   position: relative;
-  font-family: chapaza;
 }
 
 .entete__titre h2::before {
@@ -507,6 +505,25 @@ footer{
       line-height: 6rem;
   }
 }
+
+@media all and (max-width: 1520px) {
+  .containerbubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+  .bubble {
+      position: static;
+      width: 100%; /* Assure que chaque bulle prend toute la largeur */
+      margin: 10px; /* Centre les bulles horizontalement */
+      box-sizing: border-box; /* S'assure que padding/border n'affecte pas la largeur */
+  }
+  
+}
+
 /* media contact */
 @media all and (max-width: 1200px) {
   .entete__slogan {
@@ -517,10 +534,12 @@ footer{
     width: 100%;
 }
 
-
 }
+
+
+
 /*special inversement */
-@media (min-width: 992px) {
+@media (min-width: 1521px) {
   .container {
       display: block;
   }
@@ -637,20 +656,7 @@ footer{
     border-radius: 50px;
   }
 
-  .containerbubble {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
 
-  .bubble {
-      position: static;
-      width: 100%; /* Assure que chaque bulle prend toute la largeur */
-      margin: 10px; /* Centre les bulles horizontalement */
-      box-sizing: border-box; /* S'assure que padding/border n'affecte pas la largeur */
-  }
 
   .navmenu.sticky{
     border-bottom: none;

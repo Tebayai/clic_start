@@ -13,9 +13,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
 }
 
 @font-face {
@@ -32,25 +29,85 @@
 /*   menu       */
 /****************/
 
-html{
-  font-size: 62.5%;
-  overflow-x: hidden;
+.navmenu{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+}
+/* Transition barre menu quand il y a un scroll */
+.navmenu.sticky{
+  padding: 15px 0;
+  background-color: #fff;
+  height: 80px;
+}
+/* Taille max menu */
+.navmenu .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-html::-webkit-scrollbar{
-  width: 1rem;
+.navmenu .menu{
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
 }
 
-html::-webkit-scrollbar-thumb{
-  background: #002366;
+.navmenu .logonav img{
+  width: 100px;
+  height: auto;
+  margin-left: 50px;
+}
+/* Style menu */
+.navmenu .menu li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+  color: var(--color4);
+  letter-spacing: 2px;
+  text-align: center;
+  
+}
+.navmenu .menu li {
+  list-style-type:none;
+  display: inline-block;
+  justify-content: space-between;
 }
 
-body{
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #002366;
+/* Gestion logo "Porfolio" dans le menu */
+.navmenu .logonav{
+  color: rgb(240, 238, 238);
+  font-size: 35px;
+  font-weight: 600;
 }
+
+nav ul li.active a {
+  background-color: #002049; /* Couleur de fond pour l’élément actif */
+  color: white !important; /* Texte blanc pour l’élément actif */
+  padding: 12px 25px; /* Plus d’espace pour le background actif */
+  transform: scale(1.1); /* Agrandit légèrement le fond pour un effet espacé */
+}
+
+.toggle {
+  display: none;
+}
+
+
+
+/***************/
+/*   offre     */
+/***************/
 
 .container{
   overflow: hidden;
@@ -61,34 +118,6 @@ body{
 
 section{
   padding: 2rem;
-}
-
-.header{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header .logo{
-  height: 50px;
-  width: 50px;
-}
-
-.header .navbar a{
-  font-size: 2rem;
-  color: var(--color6);;
-}
-
-.header .navbar a:hover{
-  color: var(--color6);
-}
-
-#menu-btn{
-  font-size: 2.5rem;
-  color: var(--color3);
-  cursor: pointer;
-  display: none;
 }
 
 .offers {
@@ -103,9 +132,8 @@ section{
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   background-color: #fff;
-  height: 400px;
+  height: 450px;
   justify-content: center;
-  align-items: center;
   display: grid;
   place-items: center;
 }
@@ -154,7 +182,7 @@ ul li {
   text-transform: uppercase;
   color: var(--color6);
   margin-bottom: 2rem;
-  font-size: 5rem;
+  font-size: 3rem;
   margin-top: 2rem;
 }
 
@@ -205,7 +233,7 @@ ul li {
 .logov2{
   display: block;
   margin: 45px auto;
-  width: 500px;
+  width: 300px;
 }
 
 .logov3{
@@ -241,7 +269,67 @@ ul li {
 }
 
 @media (max-width:991px){
+  .navmenu .toggle {
+    display: block;
+    position: absolute;
+    top: 2.75rem;
+    right: 1rem;
+    font-size: 1.75rem;
+    cursor: pointer;
+}
 
+.ouvrir {
+    display: block;
+}
+
+.fermer {
+    display: none;
+}
+
+.open .ouvrir {
+    display: none;
+}
+
+.open .fermer {
+    display: block;
+}
+
+.logonav {
+    z-index: 20;
+    position: absolute;
+    top: 1rem;
+}
+.menu {
+  background-color: white;
+  width: 100% !important;
+  height: 100vh;
+  top: 0!important;
+  left: 0!important;
+  transform: translateX(-100%)!important;
+  transition: transform .5s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around !important;
+}
+
+.menu li a {
+    font-size: 1.8rem;
+    color: var(--color6);
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.open .menu {
+    transform: translateX(0) !important;
+} 
+
+.open .logonav {
+    display: none;
+} 
+
+.navmenu.sticky{
+  border-bottom: none;
+}
   /*faire apparaitre l'iamge de fond centrer et qu'une seule fois*/
   body{
     background:url(img/b5.jpg) no-repeat;
@@ -320,6 +408,13 @@ ul li {
     font-size: 16px;
   }
 
+  .menu li {
+    margin-bottom: 1rem;
+  }
+  .menu li a {
+    font-size: 1.5rem;
+}
+
 
 }
 
@@ -331,3 +426,14 @@ ul li {
 
 }
 
+@media (max-width: 480px) {
+  .navmenu .menu {
+    padding: 1rem;
+  }
+
+  .navmenu .menu li a {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+
+}

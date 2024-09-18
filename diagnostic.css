@@ -13,9 +13,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
 }
 
 @font-face {
@@ -31,19 +28,6 @@
 /****************/
 /*   menu       */
 /****************/
-
-html{
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
-
-html::-webkit-scrollbar{
-  width: 1rem;
-}
-
-html::-webkit-scrollbar-thumb{
-  background: #002366;
-}
 
 body{
   background-size: cover;
