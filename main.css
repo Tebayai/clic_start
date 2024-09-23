@@ -241,7 +241,7 @@ nav ul li.active a {
 }
 
 .entete__titre {
-  color: #002049;
+  color:  var(--color4);
   text-align: center;
   width: 100%;
 }
@@ -250,6 +250,8 @@ nav ul li.active a {
   font-size: 3rem;
   margin-bottom: 1rem;
   position: relative;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .entete__titre h2::before {
@@ -274,7 +276,7 @@ nav ul li.active a {
 .texte-presentation p {
   line-height: 1.6;
   text-align: justify;
-  color: #002049;
+  color: var(--color4);
 }
 
 
@@ -324,7 +326,7 @@ nav ul li.active a {
   left: 580px;
 }
 .btn:hover {
-  background-color: #0056b3;
+  background-color: var(--color4);
 }
 /*reduire la taille des images et les laisser cote a cote*/
 .image-container {
@@ -348,6 +350,7 @@ nav ul li.active a {
   width: 550px;
   height: auto;
   margin: 0 auto;
+  margin-top: 15px;
 }
 
 /*****************/
@@ -374,8 +377,8 @@ nav ul li.active a {
 
 .content-prestation {
   background: white;
-  color: #002049;
-  border: #001850 2px solid;
+  color: var(--color4);
+  border: var(--color4) 2px solid;
   padding: 50px;
   margin: 40px;
   width: 900px;
@@ -411,8 +414,8 @@ nav ul li.active a {
 
 .bubble {
   background: white;
-  border: 2px solid #002049;
-  color: #002049;
+  border: 2px solid var(--color4);
+  color: var(--color4);
   padding: 20px;
   font-size: 16px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -460,6 +463,7 @@ nav ul li.active a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: var(--color4);
 }
 
 .contact-card {

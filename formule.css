@@ -48,6 +48,7 @@
   align-items: center;
   display: grid;
   place-items: center;
+  color: var(--color4);;
 }
 
 .price {
@@ -104,7 +105,7 @@ h3 span{
   text-align: center;
   margin-bottom: 2rem;
   text-transform: uppercase;
-  color: var(--color6);
+  color: var(--color4);
   margin-bottom: 2rem;
   font-size: 5rem;
   margin-top: 2rem;
